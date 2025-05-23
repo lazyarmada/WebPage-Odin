@@ -1,35 +1,86 @@
+
 * {
     font-family: Roboto;
     margin: 0;
 }
-
-header, footer {
-    background-color: #1f2937;
-    width: 100%;
-    height: 10vh;  
-}
+/* CSS Text font start here -->*/  
 .logo {
     font-size: 24px;
     color: #f9faf8;
+    margin: 25px 0;
+    width: 50%;
 }
 
-.mainText h1 { 
+.main-greeting h1 { 
     font-size: 48px;
     color: #f9faf8;
     font-weight: 900;
 }
-header p, footer p, .mainText p {
+header p, footer p, .main-greeting p {
     font-size: 18px;
     color: #e5e7eb;
+    margin: 25px;
+}
+.bodywrapper h1 {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+}
+.quotewrapper p {
+    font: 36px, light italic;
+    color: #1f2937; 
+}
+/* <-- CSS Text fonts ends here*/
 
+
+/* CSS for each wrapper section starts here -->*/
+header, footer {
+    background-color: #1f2937;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+
+}
+.topwrapper {
+    background-color: #1f2937;
+
+    display: flex;
+    justify-content: center;
+}
+.bodywrapper, .bottomwrapper {
+    display: flex;
+    justify-content: center;
+}
+.quotewrapper {
+    background-color: #e5e7eb;
+
+}
+/* <-- CSS for each wrapper section ends here*/
+
+
+/* Content CSS input starts here -->*/
+.container {
+    width: 70%;
+    height: 35vh;
+    margin: auto;
+    padding: 0 10%;
+}
+.sub-header {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-left: 10vh;
 }
 .signup {
     background-color: #3882f6;
     color: #f9faf8;
-    border-radius: 15%;
+    border-radius:10%;
     border-style: initial;
+    padding: 5px 10px;
+    width: auto;
 }
-.topwrapper {
-    background-color: #1f2937;
-    height: 25vh;
+img{
+    max-width: 25%;
 }
+/* <-- Content CSS input ends here*/
